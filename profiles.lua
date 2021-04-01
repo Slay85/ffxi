@@ -175,13 +175,24 @@ profiles['alljunk'] = S{
     'Dhalmel Pie',
     'Navarin',
     'Brass Harness',
-    'Peace Cape',
-    
-
-
+    'Peace Cape', 
     }
 
-
+-- //sellnpc gems
+profiles['gems'] = S{
+    'Sunstone',
+    'Aquamarine',
+    'Sapphire',
+    'Fluortie',
+    'Spinel',
+    'Jadeite',
+    'Emerald',
+    'Chrysoberyl',
+    'Topaz',
+    'Zircon',
+    'Diamond',
+    'Moonstone',
+    }
 
 
 return profiles
