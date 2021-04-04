@@ -1,0 +1,52 @@
+keyboard_allowmmf 1
+
+console_position 15 50
+console_color 255 255 0 0
+console_displayactivity 1
+console_fadedelay 3500
+console_screendir screenshots
+
+
+bind ^f1 send Diantha /ma "Cure IV" <p1>
+bind ^f2 send Diantha /ma "Cure IV" <p0>
+bind ^f3 send Diantha /ma "Cure IV" <p2>
+bind ^f4 send Diantha /ma "Cure IV" <p3>
+bind ^f5 send Diantha /ma "Cure IV" <p4>
+bind ^f6 send Diantha /ma "Cure IV" <p5>
+
+bind !f1 send Diantha /ma "Curaga II" Nefeli
+bind !f2 send Diantha /ma "Curaga II" Diantha
+bind !f3 send Diantha /ma "Curaga II" <p2>
+bind !f4 send Diantha /ma "Curaga II" <p3>
+bind !f5 send Diantha /ma "Curaga II" <p4>
+bind !f6 send Diantha /ma "Curaga II" <p5>
+
+bind f9 send Nefeli /ws Upheaval <t>
+bind f10 send Nefeli /ws "Steel Cyclone <t>
+bind f11 send Nefeli /ws "Fell Cleave" <t>
+
+bind end send Diantha /ma "Carnage Elegy" <bt>
+bind ^end send Diantha /ma "Foe Requiem V" <bt>
+   
+bind pageup send Diantha /ma "Horde Lullaby II" <bt>
+bind ^pageup send Diantha /ma "Horde Lullaby" <bt>
+
+bind pagedown send Diantha /ma "Foe Lullaby II" <bt>
+bind ^pagedown send Diantha /ma "Foe Lullaby" <bt>
+
+bind home send Diantha /ma "Victory March" <me>; wait 9; send Diantha /ma "Blade Madrigal" <me>; wait 9; send Diantha /ma "Valor Minuet V" <me>
+bind ^home send Diantha /ma "Mage's Ballad III" <me>
+
+bind sysrq screenshot jpg hide
+bind ^v paste
+
+lua load superwarp
+lua load skillchains
+lua load partybuffs
+lua load repeater
+lua load sendalltarget
+lua load sellnpc
+lua load sparks
+lua load auctionhelper
+partybuffs size 20
+	
