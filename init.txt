@@ -14,12 +14,23 @@ bind ^f4 send Diantha /ma "Cure IV" <p3>
 bind ^f5 send Diantha /ma "Cure IV" <p4>
 bind ^f6 send Diantha /ma "Cure IV" <p5>
 
-bind !f1 send Diantha /ma "Curaga II" Nefeli
-bind !f2 send Diantha /ma "Curaga II" Diantha
+bind !f1 send Diantha /ma "Curaga II" <p1>
+bind !f2 send Diantha /ma "Curaga II" <p0>
 bind !f3 send Diantha /ma "Curaga II" <p2>
 bind !f4 send Diantha /ma "Curaga II" <p3>
 bind !f5 send Diantha /ma "Curaga II" <p4>
 bind !f6 send Diantha /ma "Curaga II" <p5>
+
+bind ~f1 send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Mage's Ballad III" <p1>
+bind ~f2 send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Mage's Ballad III" <p0>
+bind ~f3 send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Mage's Ballad III" <p2>
+bind ~f4 send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Mage's Ballad III" <p3>
+bind ~f5 send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Mage's Ballad III" <p4>
+bind ~f6 send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Mage's Ballad III" <p5>
+
+bind @f1 send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Victory March" <p1>;; wait 7; send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Blade Madrigal" <p1>; wait 7; send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Valor Minuet V" <p1>
+bind @f2 send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Victory March" <p0>;; wait 7; send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Blade Madrigal" <p0>; wait 7; send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Valor Minuet V" <p0>
+bind @f3 send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Victory March" <p2>;; wait 7; send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Blade Madrigal" <p2>; wait 7; send Diantha /ja Pianissimo <me>; wait 2; send Diantha /ma "Valor Minuet V" <p2>
 
 bind f9 send Nefeli /ws Upheaval <t>
 bind f10 send Nefeli /ws "Steel Cyclone <t>
@@ -35,11 +46,17 @@ bind pagedown send Diantha /ma "Foe Lullaby II" <bt>
 bind ^pagedown send Diantha /ma "Foe Lullaby" <bt>
 
 bind home send Diantha /ma "Victory March" <me>; wait 9; send Diantha /ma "Blade Madrigal" <me>; wait 9; send Diantha /ma "Valor Minuet V" <me>
-bind ^home send Diantha /ma "Mage's Ballad III" <me>
+bind ^home send Diantha /ma "Mage's Ballad III" <me>; wait 9; send Diantha /ma "Mage's Ballad II" <me>; wait 9; send Diantha /ma "Mage's Ballad" <me>
+
+bind delete send Diantha /assist <p1>; wait 2; send Diantha /attack
+
+bind numpad0 send @others /follow Nefeli
+bind numpad. send @all exec unfol
+bind numpad7 send Diantha /ma "Teleport Holla" <me>
+
 
 bind sysrq screenshot jpg hide
 bind ^v paste
-
 lua load superwarp
 lua load skillchains
 lua load partybuffs
